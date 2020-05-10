@@ -6,3 +6,10 @@
   font-size: 20em;
   font-family: "Arial";
 }
+
+.player1 {
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
