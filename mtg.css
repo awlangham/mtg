@@ -1,5 +1,6 @@
 body {
   margin: 0 0 0 0;
+  background: #001A23;
 }
 
 .player1, .player2 {
@@ -7,6 +8,11 @@ body {
   height: 50%;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  border-radius: 15px 15px 0px 0px;
+  border-top: 3px #001A23 solid;
+  border-left: 6px #001A23 solid;
+  border-right: 6px #001A23 solid;
   font-size: 8rem;
   font-family: "Roboto Mono", "Arial";
 }
