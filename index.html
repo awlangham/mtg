@@ -2,9 +2,11 @@
   <head>
     <title>MTG Life Counter</title>
     <link rel="stylesheet" href="mtg.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="mtg.js"></script>
   </head>
   <body>
-    <div class="player1" style="background: #3C4F76;"><button class="minusButton">-</button>20<button class="plusButton">+</button></div>
-    <div class="player2" style="background: #BD6B73;"><button class="minusButton">-</button>20<button class="plusButton">+</button></div>
+    <div class="player1" style="background: #3C4F76;"><button class="minusButton">-</button><span id="player1LifeText">20</span><button class="plusButton">+</button></div>
+    <div class="player2" style="background: #BD6B73;"><button class="minusButton">-</button><span id="player2LifeText">20</span><button class="plusButton">+</button></div>
   </body>
 </html>
