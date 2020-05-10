@@ -1,13 +1,22 @@
 <html>
   <head>
     <title>MTG Life Counter</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
     <link rel="stylesheet" href="mtg.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="mtg.js"></script>
   </head>
   <body>
-    <div class="player1" style="background: #3C4F76;"><button class="minusButton">-</button><span id="player1LifeText">20</span><button class="plusButton">+</button></div>
-    <div class="player2" style="background: #BD6B73;"><button class="minusButton">-</button><span id="player2LifeText">20</span><button class="plusButton">+</button></div>
+    <div class="player1" style="background: #3C4F76;">
+      <span class="btnSpan"><button class="minusButton">-</button></span>
+      <span id="player1LifeText">20</span>
+      <span class="btnSpan"><button class="plusButton">+</button></span>
+    </div>
+    <div class="player2" style="background: #BD6B73;">
+      <span class="btnSpan"><button class="minusButton">-</button></span>
+      <span id="player2LifeText">20</span>
+      <span class="btnSpan"><button class="plusButton">+</button></span>
+    </div>
   </body>
 </html>

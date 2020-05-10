@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   font-size: 8rem;
-  font-family: "Arial";
+  font-family: "Roboto Mono", "Arial";
 }
 
 .player1 {
@@ -16,8 +16,16 @@
 
 .minusButton, .plusButton {
   height: 15%;
-  width: 15%;
+  width: 70%;
   font-size: 3rem;
-  margin-left: 5%;
-  margin-right: 5%;
+}
+
+.btnSpan {
+  width: 25%;
+  text-align: center;
+}
+
+#player1LifeText, #player2LifeText {
+  width: 50%;
+  text-align: center;
 }
