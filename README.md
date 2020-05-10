@@ -1,5 +1,4 @@
-# mtg
-Simple MTG life counter.
+# Simple MTG life counter
 
 To Do:
 - Replace buttons with icons
