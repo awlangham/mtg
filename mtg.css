@@ -22,9 +22,11 @@ body {
 }
 
 .minusButton, .plusButton {
-  height: 15%;
   width: 70%;
   font-size: 2rem;
+  background: transparent;
+  border-color: #000000;
+  border-radius: 10px;
 }
 
 .btnSpan {
