@@ -21,4 +21,24 @@ $(function() {
     ++player2Life;
     $('.player2LifeText').text(player2Life);
   });
+
+  $('.colorCircle.green').click(function() {
+    $(this).closest('.innerDiv').parent().css('background', 'green');
+  });
+
+  $('.colorCircle.red').click(function() {
+    $(this).closest('.innerDiv').parent().css('background', '#BD6B73');
+  });
+
+  $('.colorCircle.white').click(function() {
+    $(this).closest('.innerDiv').parent().css('background', 'white');
+  });
+
+  $('.colorCircle.blue').click(function() {
+    $(this).closest('.innerDiv').parent().css('background', '#3C4F76');
+  });
+
+  $('.colorCircle.black').click(function() {
+    $(this).closest('.innerDiv').parent().css('background', 'gray');
+  });
 });
