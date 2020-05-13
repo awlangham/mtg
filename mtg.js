@@ -22,23 +22,23 @@ $(function() {
     $('.player2LifeText').text(player2Life);
   });
 
-  $('.colorCircle.green').click(function() {
-    $(this).closest('.innerDiv').parent().css('background', 'green');
-  });
-
-  $('.colorCircle.red').click(function() {
-    $(this).closest('.innerDiv').parent().css('background', '#BD6B73');
-  });
-
   $('.colorCircle.white').click(function() {
-    $(this).closest('.innerDiv').parent().css('background', 'white');
+    $(this).closest('.innerDiv').parent().removeClass('blue black red green').addClass('white');
   });
 
   $('.colorCircle.blue').click(function() {
-    $(this).closest('.innerDiv').parent().css('background', '#3C4F76');
+    $(this).closest('.innerDiv').parent().removeClass('white black red green').addClass('blue');
   });
 
   $('.colorCircle.black').click(function() {
-    $(this).closest('.innerDiv').parent().css('background', 'gray');
+    $(this).closest('.innerDiv').parent().removeClass('white blue red green').addClass('black');
+  });
+
+  $('.colorCircle.red').click(function() {
+    $(this).closest('.innerDiv').parent().removeClass('white blue black green').addClass('red');
+  });
+
+  $('.colorCircle.green').click(function() {
+    $(this).closest('.innerDiv').parent().removeClass('white blue black red').addClass('green');
   });
 });
