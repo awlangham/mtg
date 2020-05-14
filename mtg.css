@@ -15,7 +15,7 @@ body {
 }
 
 .player1.white, .player2.white {
-  background-color: #FFFFFF;
+  background-color: #FFFBFE;
 }
 
 .player1.blue, .player2.blue {
@@ -23,7 +23,7 @@ body {
 }
 
 .player1.black, .player2.black {
-  background-color: gray;
+  background-color: #5B616A;
 }
 
 .player1.red, .player2.red {
@@ -31,7 +31,7 @@ body {
 }
 
 .player1.green, .player2.green {
-  background-color: green;
+  background-color: #337357;
 }
 
 /* .middleBar {
@@ -117,7 +117,7 @@ body {
 }
 
 .colorCircle.green:before {
-  background-color: green;
+  background-color: #337357;
 }
 
 .colorCircle.red:before {
@@ -125,7 +125,7 @@ body {
 }
 
 .colorCircle.white:before {
-  background-color: white;
+  background-color: #FFFBFE;
 }
 
 .colorCircle.blue:before {
@@ -133,5 +133,5 @@ body {
 }
 
 .colorCircle.black:before {
-  background-color: black;
+  background-color: #5B616A;
 }
