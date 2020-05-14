@@ -4,7 +4,6 @@ body {
 }
 
 .player1, .player2 {
-  /* height: 47%; */
   height: 50%;
   box-sizing: border-box;
   border-radius: 15px 15px 0px 0px;
@@ -13,6 +12,26 @@ body {
   border-right: 6px #001A23 solid;
   font-size: 8rem;
   font-family: "Roboto Mono", "Arial";
+}
+
+.player1.white, .player2.white {
+  background-color: #FFFBFE;
+}
+
+.player1.blue, .player2.blue {
+  background-color: #3C4F76;
+}
+
+.player1.black, .player2.black {
+  background-color: #5B616A;
+}
+
+.player1.red, .player2.red {
+  background-color: #BD6B73;
+}
+
+.player1.green, .player2.green {
+  background-color: #337357;
 }
 
 /* .middleBar {
@@ -92,26 +111,28 @@ body {
   border-radius: 50%;
 }
 
+.colorCircle:before {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+}
+
 .colorCircle.green:before {
-  background-color: green;
-  border: 1px solid #000000;
+  background-color: #337357;
 }
 
 .colorCircle.red:before {
   background-color: #BD6B73;
-  border: 1px solid #000000;
 }
 
 .colorCircle.white:before {
-  background-color: white;
-  border: 1px solid #000000;
+  background-color: #FFFBFE;
 }
 
 .colorCircle.blue:before {
   background-color: #3C4F76;
-  border: 1px solid #000000;
 }
 
 .colorCircle.black:before {
-  background-color: black;
+  background-color: #5B616A;
 }
