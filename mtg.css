@@ -97,10 +97,12 @@ body {
 
 .settingsSpan img {
   width: 3%;
+  margin-right: 5%;
 }
 
 .colorCircle {
-  padding-left: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .colorCircle:before {
@@ -135,4 +137,9 @@ body {
 
 .colorCircle.black:before {
   background-color: #5B616A;
+}
+
+.colorSpan {
+  display: flex;
+  width: 97%;
 }
