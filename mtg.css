@@ -34,10 +34,6 @@ body {
   background-color: #337357;
 }
 
-/* .middleBar {
-  height: 6%;
-} */
-
 .player1 {
   -webkit-transform: rotateZ(180deg);
   -moz-transform: rotateZ(180deg);
@@ -142,4 +138,8 @@ body {
 .colorSpan {
   display: flex;
   width: 97%;
+}
+
+.colorSpan.hidden {
+  display: none;
 }

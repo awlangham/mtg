@@ -41,4 +41,8 @@ $(function() {
   $('.colorCircle.green').click(function() {
     $(this).closest('.innerDiv').parent().removeClass('white blue black red').addClass('green');
   });
+
+  $('.settingsButton').click(function() {
+    $(this).siblings('.colorSpan').toggleClass('hidden');
+  });
 });
