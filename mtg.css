@@ -143,3 +143,10 @@ body {
 .colorSpan.hidden {
   display: none;
 }
+
+.player1PlusCounter, .player1MinusCounter, .player2PlusCounter, .player2MinusCounter {
+  visibility: hidden;
+  font-size: 1rem;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}

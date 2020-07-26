@@ -2,24 +2,64 @@ $(function() {
   var player1Life = 20;
   var player2Life = 20;
 
+  function CounterThing() {
+    this.selector = '';
+    this.count = 0;
+    this.init = function(selector) {
+      if (this.selector != selector) {
+          this.count = 0;
+          $(this.selector).css('visibility', 'hidden');
+          clearTimeout(this.timeout);
+          this.selector = selector;
+      }
+    },
+    this.place = function() {
+      $(this.selector).text(this.count).css('visibility', 'visible');
+      clearTimeout(this.timeout);
+      this.timeout = setTimeout(function(a) {
+        $(a.selector).css('visibility', 'hidden');
+        a.count = 0;
+      }, 1500, this);
+    }
+  }
+
+  pressCounter1 = new CounterThing();
+  pressCounter2 = new CounterThing();
+
   $('.player1 .minusButton').click(function() {
     --player1Life;
     $('.player1LifeText').text(player1Life);
+
+    pressCounter1.init('.player1MinusCounter');
+    --pressCounter1.count;
+    pressCounter1.place();
   });
 
   $('.player1 .plusButton').click(function() {
     ++player1Life;
     $('.player1LifeText').text(player1Life);
+
+    pressCounter1.init('.player1PlusCounter');
+    ++pressCounter1.count;
+    pressCounter1.place();
   });
 
   $('.player2 .minusButton').click(function() {
     --player2Life;
     $('.player2LifeText').text(player2Life);
+
+    pressCounter2.init('.player2MinusCounter');
+    --pressCounter2.count;
+    pressCounter2.place();
   });
 
   $('.player2 .plusButton').click(function() {
     ++player2Life;
     $('.player2LifeText').text(player2Life);
+
+    pressCounter2.init('.player2PlusCounter');
+    ++pressCounter2.count;
+    pressCounter2.place();
   });
 
   $('.colorCircle.white').click(function() {
