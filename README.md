@@ -7,3 +7,4 @@ To Do:
 - Add poison counters
 - Add Undo feature and counter for number of times button pressed
 - Add ability to use image as background
+- Add landscape mode
