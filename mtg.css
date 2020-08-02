@@ -146,7 +146,18 @@ body {
 
 .player1PlusCounter, .player1MinusCounter, .player2PlusCounter, .player2MinusCounter {
   visibility: hidden;
+  opacity: 0;
+  position: relative;
+  top: 1.5rem;
   font-size: 1rem;
   margin-top: 0px;
   margin-bottom: 5px;
+  transition-duration: 0.2s;
+}
+
+.player1PlusCounter.active, .player1MinusCounter.active, .player2PlusCounter.active, .player2MinusCounter.active {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+  transition-duration: 0.2s;
 }

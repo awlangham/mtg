@@ -8,16 +8,16 @@ $(function() {
     this.init = function(selector) {
       if (this.selector != selector) {
           this.count = 0;
-          $(this.selector).css('visibility', 'hidden');
+          $(this.selector).removeClass('active');
           clearTimeout(this.timeout);
           this.selector = selector;
       }
     },
     this.place = function() {
-      $(this.selector).text(this.count).css('visibility', 'visible');
+      $(this.selector).text(this.count).addClass('active');
       clearTimeout(this.timeout);
       this.timeout = setTimeout(function(a) {
-        $(a.selector).css('visibility', 'hidden');
+        $(a.selector).removeClass('active');
         a.count = 0;
       }, 1500, this);
     }
