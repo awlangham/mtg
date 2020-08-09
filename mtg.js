@@ -15,9 +15,11 @@ $(function() {
     },
     this.place = function() {
       $(this.selector).text(this.count).addClass('active');
+      $(this.selector).siblings('.undoBtn').addClass('active');
       clearTimeout(this.timeout);
       this.timeout = setTimeout(function(a) {
         $(a.selector).removeClass('active');
+        $(a.selector).siblings('.undoBtn').removeClass('active');
         a.count = 0;
       }, 1500, this);
     }
@@ -84,5 +86,25 @@ $(function() {
 
   $('.settingsButton').click(function() {
     $(this).siblings('.colorSpan').toggleClass('hidden');
+  });
+
+  $('.player1 .undoBtn').click(function() {
+    player1Life -= pressCounter1.count;
+    $('.player1LifeText').text(player1Life);
+
+    clearTimeout(pressCounter1.timeout);
+    pressCounter1.count = 0;
+    $(this).removeClass('active');
+    $(this).siblings('.player1PlusCounter, .player1MinusCounter').removeClass('active');
+  });
+
+  $('.player2 .undoBtn').click(function() {
+    player2Life -= pressCounter2.count;
+    $('.player2LifeText').text(player2Life);
+
+    clearTimeout(pressCounter2.timeout);
+    pressCounter2.count = 0;
+    $(this).removeClass('active');
+    $(this).siblings('.player2PlusCounter, .player2MinusCounter').removeClass('active');
   });
 });
