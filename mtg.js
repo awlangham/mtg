@@ -9,6 +9,7 @@ $(function() {
       if (this.selector != selector) {
           this.count = 0;
           $(this.selector).removeClass('active');
+          $(this.selector).siblings('.undoBtn').removeClass('active');
           clearTimeout(this.timeout);
           this.selector = selector;
       }
